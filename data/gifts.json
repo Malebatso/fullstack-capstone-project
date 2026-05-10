@@ -1,0 +1,38 @@
+[
+{
+"title": "Wooden Chair",
+"category": "Furniture",
+"condition": "Used",
+"description": "Solid wooden dining chair"
+},
+{
+"title": "Microwave",
+"category": "Appliances",
+"condition": "Good",
+"description": "Working microwave oven"
+},
+{
+"title": "Study Desk",
+"category": "Furniture",
+"condition": "Excellent",
+"description": "Large study desk with drawers"
+},
+{
+"title": "Children Toys",
+"category": "Kids",
+"condition": "Used",
+"description": "Box of assorted toys"
+},
+{
+"title": "Coffee Table",
+"category": "Furniture",
+"condition": "Good",
+"description": "Glass coffee table"
+},
+{
+"title": "Television",
+"category": "Electronics",
+"condition": "Fair",
+"description": "42 inch LED TV"
+}
+]
