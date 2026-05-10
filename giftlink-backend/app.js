@@ -11,6 +11,9 @@ const { connectToDatabase } = require('./models/db');
 // Gift API Task 1
 const giftRoutes = require("./routes/giftRoutes");
 
+// Search API Task 1
+const searchRoutes = require("./routes/searchRoutes");
+
 const app = express();
 app.use("*", cors());
 const port = 3060;
@@ -31,8 +34,8 @@ app.use(pinoHttp({ logger }));
 // Gift API Task 2
 app.use("/api/gifts", giftRoutes);
 
-// Search API Task 2 stays for later
-//{{insert code here}}
+// Search API Task 2
+app.use("/api/gifts/search", searchRoutes);
 
 app.use((err, req, res, next) => {
     console.error(err);
