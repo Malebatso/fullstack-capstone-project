@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function RegisterPage() {
+
+  const [username, setUsername] = useState("testuser");
+  const [password, setPassword] = useState("password123");
 
   const registerUser = async () => {
 
@@ -10,8 +13,8 @@ function RegisterPage() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        username: "testuser",
-        password: "password123"
+        username,
+        password
       })
     });
 
@@ -20,6 +23,22 @@ function RegisterPage() {
   return (
     <div>
       <h1>Register Page</h1>
+
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+
+      <br /><br />
+
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
+      <br /><br />
 
       <button onClick={registerUser}>
         Register
